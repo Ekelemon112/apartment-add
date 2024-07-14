@@ -1,0 +1,1324 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+}
+
+:root {
+    --background: var(--swatch--gainsboro);
+    --paragraph: var(--swatch--dark-grey);
+    --heading: var(--swatch--black);
+    --swatch--black: black;
+    --swatch--blue-1: #4b7697;
+    --swatch--white: white;
+    --button-bg-primary: var(--swatch--white);
+    --button-text-primary: var(--swatch--black);
+    --swatch--blue-3: #c1cfd9;
+    --button-bg-secondary: var(--swatch--transparent);
+    --button-text-secondary: var(--swatch--white);
+    --strokes: var(--swatch--light-grey);
+    --stroke-2: #bcbcbc;
+    --swatch--light-grey: #d0d0d0;
+    --white\<deleted\|variable-1766b841\>: white;
+    --swatch--gainsboro: #e8e8e8;
+    --swatch--transparent: rgba(255, 255, 255, 0);
+    --swatch--dark-grey: #676767;
+    --swatch--blue-2: #7fa5c0;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+body {
+    background: #e2e1e1;
+    overflow-x: hidden;
+    scrollbar-color: #000;
+}
+
+a{
+    text-decoration: none;
+    color:  white;
+}
+
+#headers{
+    width: 100%;
+    height: 100vh;
+    background-image: -webkit-linear-gradient(100deg, #e2e1e1 30%,#7fa5c0 50%);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    align-items: center;
+}
+
+.first-header a{   
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.nav-list{
+    display: flex;
+    gap: 25px;
+    font-size: 18px;
+}
+
+.nav-list a:hover{
+    transition: 0.5s;
+    color: #c1cfd9;
+}
+
+.button a{
+    background: white;
+    color: #676767;
+    font-weight: 400;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.button a:hover{
+    background: #d0d0d0;
+}
+
+.bar-buttom ion-icon{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    display: none;
+}
+
+.bar-buttom ion-icon:hover{
+    color: #c1cfd9;
+}
+
+.head-text{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.head-text h1{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #e8e8e8;
+}
+
+.head-text p{
+    font-weight: 400;
+    font-size: 19px;
+    color: white;
+    margin-bottom: 7px;
+}
+
+.head-text-button{
+    display: flex;
+    gap: 13px;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 1px;
+}
+
+.head-text-button a{
+    background: white;
+    color: #676767;
+    font-weight: 400;
+    padding: 15px 20px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+/* ----------------- form -------------- */
+form{
+    width: 100%;
+    padding: 0 200px;
+    
+
+}
+
+form h1{
+    font-size: 19px;
+    font-weight: 500;
+    color: #575454e0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* ----------------- .form-list-one-------------- */
+
+.form-list-one{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.first-list{
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 50px;
+}
+
+.first-list p{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.first-list p span{
+    font-size: 19px;
+    color: #3f3e3e;
+}
+
+.first-list input{
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: 1px solid #676767;
+    background: transparent;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    font-size: 17px;
+    color: #676767;
+}
+
+/* ----------------- sel-form -------------- */
+
+.sel-form{
+    margin-bottom: 30px;
+}
+
+.sel-form h1{
+    text-align-last: left;
+    margin-bottom: 5px;
+}
+
+.sel-form select{
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: 1px solid #676767;
+    background: transparent;
+    border-radius: 5px;
+    color: #3f3e3e;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* ----------------- .form-list-two-------------- */
+
+.form-list-two{
+    width: 100%;
+    text-align-last: left;
+}
+
+.lists{
+    width: 100%;
+    display: flex;
+    gap: 40%;
+}
+
+.first-lists p span #box{
+    width: 15px;
+    height: 15px;
+    margin-bottom: 10px;
+}
+
+.first-lists p {
+    font-size: 18px;
+    color: #676767;
+    margin-top: 10px;
+}
+
+/* ----------------- message-form-------------- */
+
+.message-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.message-form h1{
+    font-size: 16px;
+    text-align-last: left;
+    margin-bottom: 0;
+}
+
+.message-form textarea{
+    width: 100%;
+    height: 200px;
+    outline: none;
+    border: 1px solid #676767;border-radius: 5px;
+    padding: 10px;
+    resize: none;
+    color: #676767;
+    font-size: 15px;
+    background: transparent;
+}
+
+.message-form  p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.message-form  p input{
+    width: 15px;
+    height: 15px;
+}
+
+.message-form  p span{
+    font-size: 15px;
+    color: #3f3e3e;
+}
+
+.message-form  p span a{
+    font-size: 15px;
+    color: #3f3e3e;
+    text-decoration: underline;
+}
+
+/* ------------------- sub-form ----------------- */
+
+.sub-form{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.sub-form input{
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    border: none;
+}
+
+.sub-form input:hover{
+    background: #7fa5c06a;
+}
+
+/* ----------------- body-text ------------------ */
+
+.body-text{
+    text-align: center;
+    margin-top: 110px;
+    margin-bottom: 40px;
+    background: #4b7697;
+    padding: 10px 0;
+}
+
+.body-text h1{
+    margin-bottom: 30px;
+    font-size: 3.5rem;
+    font-weight: 400;
+    max-width: 64%;
+    margin-left: 4em;
+    color: #e8e8e8;
+}
+
+.body-text p{
+    font-weight: 400;
+    max-width: 58%;
+    margin-left: 15em;
+    font-size: 16px;
+    font-weight: 510;
+    color: white;
+    line-height: 22px;
+}
+
+.body-text-button{
+    display: flex;
+    gap: 13px;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 1px;
+}
+
+.body-text-button a{
+    background: white;
+    color: #676767;
+    font-weight: 400;
+    padding: 15px 20px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.body-text-button a:hover{
+    background: #d0d0d0;
+}
+.body-text-button .secz{
+    font-weight: 400;
+    background: none;
+    border: 1.5px solid #e8e8e8;
+    color: #e8e8e8;
+    padding: 15px 20px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.body-text-button .secz:hover{
+    border: 1.5px solid #d0caca;
+    color: #dad2d2;
+    background: #d0d0d01d; 
+}
+
+/* -------------- end-body -------------- */
+
+
+.end-body{
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0 50px;
+}
+
+.end-cards{
+    width: 100%;
+    display: flex;
+    padding: 50px 0;
+}
+
+.end-card-one h1{
+    font-size: 25px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    color: #4b7697;
+}
+
+.end-card-one p{
+    font-size: 17px;
+    color: #676767;
+}
+
+.end-card-one .sub-all-button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.end-card-one .sub-all-button input{
+    padding: 15px 10px;
+    background: transparent;
+    outline: none;
+    width: 55%;
+    border: 1px solid #676767;
+    border-radius: 5px;
+    color: #676767;
+}
+
+.end-card-one .sub-all-button a {
+    padding: 15px 20px;
+    border: 1px solid #1c1b1b;
+    color: #1c1b1b;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.end-card-one .sub-all-button a:hover{
+    border: 1px solid #676767;
+    color: #676767;
+}
+
+.end-card-one h2{
+    font-size: 13px;
+    font-weight: 400;
+    color: #676767;
+    width: 75%;
+}
+
+.end-card-one h2 a{
+    color: #676767;
+    text-decoration: underline;
+}
+
+.end-card-two{
+    display: flex;
+    gap: 100px;
+}
+
+.list-Pages h1{
+   margin-bottom: 20px; 
+   font-size: 18px;
+}
+
+.list-Pages ul{
+    display: flex;
+    flex-direction: column;
+    line-height: 41px;
+
+}
+
+.list-Pages ul a{
+    color: #676767;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.list-Pages ul a:hover{
+    color: #4b7697;
+
+}
+
+#social a{
+    display: flex;
+    gap: 10px;
+}
+
+#social a span img{
+    width: 30px;
+    margin-top: 5px;
+}
+
+/* -------------- .boldness -------------- */
+
+.boldness{
+    width: 100%;
+    border: 0.5px solid #bab8b8de;
+    margin-bottom: 30px;
+}
+
+
+/* --------------- powered -------------- */
+
+.powered{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.powered p{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 16px;
+    color: #3f3e3e;
+}
+
+.powered p span img{
+    width: 20px;
+    margin-top: 5px;
+}
+
+.powered p a{
+    color: #3f3e3e;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.powered p a:hover{
+    color: #4b7697;
+}
+
+/* --------------- small screen ---------------- */
+
+@media only screen and (max-width: 480px){
+    body{
+        overflow-x: hidden;
+    }
+    #headers{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 100px;
+    }
+    .header{
+        display: flex;
+        padding: 10px 20px;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .first-header a{   
+        font-size: 1px;
+    }
+    .nav-list{
+        display: none;
+    }
+    .button a{
+        display: none;
+    }
+    .head-text{
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+    .head-text h1{
+        text-align: center;
+        font-size: 18px;
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+        color: #676767;
+    }
+    .head-text p{
+        max-width: 100%;
+        margin-left: 0;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #676767;
+        margin-bottom: 3px;
+    }
+    .head-text-button{
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    .head-text-button a{
+        width: 100%;
+    }
+    .head-text-button .sec{
+        width: 100%;
+    }
+    /* --------- form --------- */
+    form{
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0 10px;
+    }
+    form h1{
+        font-size: 17px;
+        text-align-last: left;
+    }
+    /* ----------------- .form-list-one-------------- */
+    .form-list-one{
+        flex-direction: column;
+        padding: 0 0;
+    }
+    .first-list{
+        padding: 0 0;
+        margin-top: 10px;
+    }
+    .first-list p span{
+        width: 100%;
+        font-size: 14px;
+    }
+    
+
+    /* ------------- sel-form select----------- */
+    .sel-form select{
+        font-size: 16px;
+        padding: 0px;
+    }
+    /* ----------------- .form-list-two-------------- */
+    .lists{
+        justify-content: space-between;
+        gap: 0;
+    }
+     /* ------------------ body-tex ---------- */
+     .body-text{
+        text-align: center;
+        margin-top: 40px;
+        padding: 0 10px;
+    }
+    .body-text h1{
+        font-size: 21px;
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .body-text p{
+        max-width: 100%;
+        margin-left: 0;
+        font-size: 15px;
+        font-weight: 100;
+        padding: 0 0;
+    }
+    .body-text-button{
+        padding: 0 10px;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .body-text-button a{
+        padding: 0 0;
+        width: 100%;
+    }
+    /* -------------- end-body -------------- */
+    .end-body{
+        padding: 0 10px;
+    }
+    .end-cards{
+        width: 100%;
+        gap: 30px;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .end-card-one .sub-all-button{
+        flex-direction: column;
+        align-items: center;
+    }
+    .end-card-one .sub-all-button input{
+        width: 100%;
+    }
+    .end-card-one .sub-all-button a {
+        width: 100%;
+        text-align: center;
+    }
+    .end-card-two{
+        width: 100%;
+        margin-top: 20px;
+        gap: 30px;
+    }
+    .powered p{
+        width: 100%;
+        gap: 2px;
+        font-size: 14px;
+    }
+    
+    .powered p span img{
+        width: 20px;
+    }
+    
+    .powered p a{
+        font-size: 14px;
+    }
+}
+
+/* mimi ipad screen */
+
+@media only screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    #headers{
+        width: 100%;
+        height: 100%;
+        padding: 10px 0;
+    }
+    .header{
+        display: flex;
+        padding: 10px 20px;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .first-header a{   
+        font-size: 20px;
+    }
+    .nav-list{
+        display: none;
+    }
+    .button a{
+        display: none;
+    }
+    .head-text{
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+    .head-text h1{
+        text-align: center;
+        font-size: 25px;
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .head-text p{
+        max-width: 100%;
+        margin-left: 0;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #3f3e3e;
+        margin-bottom: 3.5px;
+    }
+    .head-text-button{
+        padding: 20px;
+        margin-top: 50px;
+    }
+    .head-text-button a{
+        padding: 10px 10px;
+    }
+    .head-text-button .sec{
+        padding: 10px 10px;
+    }
+    /* --------- form --------- */
+    form{
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0 10px;
+    }
+    form h1{
+        font-size: 17px;
+        text-align-last: left;
+    }
+    /* ----------------- .form-list-one-------------- */
+    .form-list-one{
+        flex-direction: column;
+        padding: 0 0;
+    }
+    .first-list{
+        padding: 0 0;
+        margin-top: 10px;
+    }
+    .first-list p span{
+        width: 100%;
+        font-size: 14px;
+    }
+    
+
+    /* ------------- sel-form select----------- */
+    .sel-form select{
+        font-size: 16px;
+        padding: 0px;
+    }
+    /* ----------------- .form-list-two-------------- */
+    .lists{
+        justify-content: space-between;
+        gap: 0;
+    }
+    /* -------------- body-text -------------- */
+    .body-text{
+        text-align: center;
+        margin-top: 50px;
+        padding: 5px 5px;
+    }
+    .body-text h1{
+        margin-bottom: 15px;
+        font-size: 22px;
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .body-text p{
+        max-width: 100%;
+        margin-left: 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .body-text-button{
+        padding: 0 40px;
+    }
+    .body-text-button a{
+        padding: 15px 15px;
+    }
+    /* -------------- end-body -------------- */
+    .end-body{
+        padding: 0 20px;
+    }
+    .end-cards{
+        width: 100%;
+        flex-direction: column;
+        padding: 50px 0;
+    }
+    .end-card-one .sub-all-button{
+        align-items: center;
+    }
+    .end-card-one .sub-all-button input{
+        width: 100%;
+    }
+    .end-card-one .sub-all-button a {
+        width: 40%;
+        text-align: center;
+    }
+    .end-card-two{
+        width: 100%;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+        /*    poewerd     */
+    .powered p{
+        gap: 5px;
+        font-size: 16px;
+    }
+    
+    .powered p span img{
+        width: 15px;
+        margin-top: 5px;
+    }
+    
+    .powered p a{
+        color: #3f3e3e;
+        text-decoration: underline;
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width: 890px){
+    body{
+        overflow-x: hidden;
+    }
+    #headers{
+        width: 100%;
+        height: 100%;
+    }
+    .header{
+        display: flex;
+        padding: 20px 20px;
+        align-items: center;
+    }
+    .first-header a{   
+        font-size: 30px;
+    }
+    .nav-list{
+        display: none;
+        gap: 25px;
+        font-size: 18px;
+    }
+    .button a{
+        display: none;
+    }
+    .head-text{
+        text-align: center;
+        margin-top: 60px;
+    }
+    .head-text h1{
+        text-align: center;
+        /* font-size: 55px; */
+        max-width: 100%;
+        margin-left: 0;
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+    .head-text p{
+        max-width: 100%;
+        margin-left: 0;
+        font-size: 18px;
+        line-height: 21px;
+        padding: 0 20px;
+    }
+    .head-text-button{
+        width: 100%;
+        display: flex;
+        gap: 13px;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    /* --------- form --------- */
+    form{
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0 10px;
+    }
+    form h1{
+        font-size: 17px;
+        text-align-last: left;
+    }
+    /* ----------------- .form-list-one-------------- */
+    .form-list-one{
+        /* flex-direction: column; */
+        gap: 10px;
+        padding: 0 0;
+    }
+    .first-list{
+        padding: 0 0;
+        margin-top: 10px;
+    }
+    .first-list p span{
+        width: 100%;
+        font-size: 14px;
+    }
+    
+
+    /* ------------- sel-form select----------- */
+    .sel-form select{
+        font-size: 16px;
+        padding: 0px;
+    }
+    /* ----------------- .form-list-two-------------- */
+    .lists{
+        justify-content: space-between;
+        gap: 0;
+    }   
+    /* -------------- body-text -------------- */
+    .body-text{
+        text-align: center;
+        margin-top: 50px;
+        padding: 8px 20px;
+    }
+    .body-text h1{
+        margin-bottom: 30px;
+        /* font-size: 35px; */
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .body-text p{
+        max-width: 100%;
+        margin-left: 0;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .body-text-button a{
+        padding: 15px 15px;
+    }
+    /* -------------- end-body -------------- */
+    .end-body{
+        padding: 0 20px;
+    }
+    .end-card-one h1{
+        margin-bottom: 20px;
+    }
+    .end-cards{
+        width: 100%;
+        padding: 50px 0;
+        flex-direction: column;
+    }
+    .end-card-one .sub-all-button{
+        /* flex-direction: column; */
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .end-card-one .sub-all-button input{
+        width: 100%;
+    }
+    .end-card-one .sub-all-button a {
+        width: 20%;
+        text-align: center;
+    }
+    .end-card-two{
+        width: 100%;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+}
+
+
+@media only screen and (max-width: 990px){
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    #headers{
+        width: 100%;
+        height: 100%;
+    }
+    .header{
+        display: flex;
+        padding: 20px 20px;
+        align-items: center;
+    }
+    .first-header a{   
+        font-size: 30px;
+    }
+    .nav-list{
+        display: none;
+        gap: 25px;
+        font-size: 18px;
+    }
+    .button a{
+        display: none;
+    }
+    .bar-buttom ion-icon{
+        display: block;
+
+    }
+    .active{
+        display: block;
+    }
+    .bar-buttom ion-icon .active:nth-child(2){
+        opacity: 0;
+    }
+    .bar-buttom ion-icon .active:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .bar-buttom ion-icon .active:nth-child(2){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-list{
+        position: fixed;
+        z-index: 100;
+        left: -100%;
+        top: 0;
+        gap: 3;
+        display: flex;
+        flex-direction: column;
+        background: #4b7697;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s ;
+        /* width: 150px; */
+        padding-bottom: 30px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .nav-list.active{
+        left: 0;
+    }
+    .head-text{
+        text-align: left;
+        margin-top: 60px;
+    }
+    .head-text h1{
+        text-align: center;
+        /* font-size: 55px; */
+        max-width: 100%;
+        margin-left: 0;
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+    .head-text p{
+        max-width: 100%;
+        margin-left: 0;
+        font-size: 20px;
+        line-height: 21px;
+        padding: 0 20px;
+        font-weight: 400;
+    }
+    .head-text-button{
+        width: 100%;
+        display: flex;
+        gap: 13px;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    /* --------- form --------- */
+    form{
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0 10px;
+    }
+    form h1{
+        font-size: 17px;
+        text-align-last: left;
+    }
+    /* ----------------- .form-list-one-------------- */
+    .form-list-one{
+        /* flex-direction: column; */
+        gap: 10px;
+        padding: 0 0;
+    }
+    .first-list{
+        padding: 0 0;
+        margin-top: 10px;
+    }
+    .first-list p span{
+        width: 100%;
+        font-size: 14px;
+    }
+    
+
+    /* ------------- sel-form select----------- */
+    .sel-form select{
+        font-size: 16px;
+        padding: 0px;
+    }
+    /* ----------------- .form-list-two-------------- */
+    .lists{
+        justify-content: space-between;
+        gap: 0;
+    }    
+    /* -------------- body-text -------------- */
+    .body-text{
+        text-align: center;
+        margin-top: 50px;
+        padding: 8px 20px;
+    }
+    .body-text h1{
+        margin-bottom: 30px;
+        /* font-size: 35px; */
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .body-text p{
+        max-width: 100%;
+        margin-left: 0;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .body-text-button a{
+        padding: 15px 15px;
+    }
+    /* -------------- end-body -------------- */
+    .end-body{
+        padding: 0 20px;
+    }
+    .end-card-one h1{
+        margin-bottom: 20px;
+    }
+    .end-cards{
+        width: 100%;
+        padding: 50px 0;
+        gap: 50px;
+    }
+    .end-card-one .sub-all-button{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .end-card-one .sub-all-button input{
+        width: 100%;
+    }
+    .end-card-one .sub-all-button a {
+        width: 40%;
+        text-align: center;
+    }
+    .end-card-two{
+        width: 100%;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+}
+
+
+
+/* @media only screen and (max-width: 990px){
+    body{
+        overflow-x: hidden;
+    }
+    #headers{
+        width: 100%;
+        height: 100%;
+    }
+    .header{
+        display: flex;
+        padding: 20px 20px;
+        align-items: center;
+    }
+    .first-header a{   
+        font-size: 30px;
+    }
+    .nav-list{
+        /* display: none; */
+        /* gap: 25px;
+        font-size: 18px; 
+    }
+    .head-text h1{
+        text-align: center;
+        max-width: 100%;
+        margin-left: 0;
+        padding: 0 20px;
+        margin-bottom: 15px;
+    }
+    .head-text p{
+        max-width: 100%;
+        margin-left: 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        padding: 0 10px;
+    }
+    .head-text-button{
+        width: 100%;
+        display: flex;
+        gap: 13px;
+        justify-content: center;
+        margin-top: 50px;
+    } 
+    /* ------------ all cards -------------- *
+    #all-cards{
+        width: 100%;
+        padding: 0 20px;
+    }
+    /* ---------------- redefining  ----------------- *
+    .redef{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .redef-text p{
+        font-size: 18px;
+        width: 100%;
+    }
+    .redef-img img{
+        width: 100%;
+    }
+    /* ------------- help ----------- *
+    .help{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .help-lists{
+        width: 100%;
+        /* flex-direction: column; *
+        gap: 20px;
+        text-align: center;
+    }
+    .help-icons img{
+        margin-bottom: 10px;
+        width: 40px;
+    }
+    .help-icons h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    /* --------------- team ------------ *
+    .team-text h1{
+        font-size: 30px;
+    }
+    .team-text p{
+        font-size: 18px;
+    }
+    .team-lists{
+        width: 100%;
+        flex-direction: column;
+    }
+    .lists-teams{
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        margin-bottom: 30%;
+    }
+    .lists-team{
+        width: 100%;
+        box-shadow: 0 0 1px 0 #3f3e3e;
+        margin-bottom: 20px;
+    }
+    /* -------------- body-text -------------- *
+    .body-text{
+        text-align: center;
+        margin-top: 50px;
+        padding: 8px 20px;
+    }
+    .body-text h1{
+        margin-bottom: 30px;
+        font-size: 30px;
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .body-text p{
+        max-width: 100%;
+        margin-left: 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .body-text-button a{
+        padding: 15px 15px;
+    }
+    /* -------------- end-body -------------- *
+    .end-body{
+        padding: 0 20px;
+    }
+    .end-cards{
+        width: 100%;
+        gap: 30px;
+        /* flex-direction: column; *
+        padding: 50px 0;
+    }
+    .end-card-one .sub-all-button{
+        flex-direction: column;
+        align-items: center;
+    }
+    .end-card-one .sub-all-button input{
+        width: 100%;
+    }
+    .end-card-one .sub-all-button a {
+        width: 100%;
+        text-align: center;
+    }
+    .end-card-two{
+        width: 100%;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+} */
